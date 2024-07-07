@@ -1,0 +1,75 @@
+body {
+    background-color: #000;
+    font-family: "JetBrains Mono", monospace;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.ascii {
+    color: white;
+    font-size: 3px;
+    line-height: 2.7px;
+    letter-spacing: unset;
+    position: relative;
+}
+
+.splitter {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.text-info {
+    color: #fff;
+}
+
+.email {
+    color: #00ff00;
+    background-color: #383838;
+    padding: 3px;
+}
+
+.quote {
+    font-style: italic;
+    opacity: 0.5;
+    font-size: 0.8em;
+}
+
+#ip-data {
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* mobile */
+
+@media (max-width: 600px) {
+    .splitter {
+        flex-direction: column;
+    }
+
+    .ascii {
+        font-size: 2px;
+        line-height: 1.8px;
+    }
+
+    .text-info {
+        margin: 10px;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .splitter {
+        flex-direction: column;
+    }
+
+    .ascii {
+        font-size: 3px;
+        line-height: 2.7px;
+    }
+}
