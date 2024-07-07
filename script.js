@@ -1,6 +1,6 @@
 async function fetchIPData() {
   try {
-    const response = await fetch("http://edns.ip-api.com/json");
+    const response = await fetch("https://edns.ip-api.com/json");
     if (!response.ok) {
       throw new Error("Network response was not ok " + response.statusText);
     }
